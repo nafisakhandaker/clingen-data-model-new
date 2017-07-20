@@ -1,4 +1,9 @@
+allele:
+  icon: glyphicon-leaf
+  repository: "git@github.com:nafisakhandaker/allele.git"
+  versions:
+    -  []
 interpretation:
   icon: glyphicon-star
-  repository: "git@github.com:nafisakhandaker/clingen-data-model.git"
+  repository: "git@github.com:nafisakhandaker/clingen-interpretation.git"
   versions: []

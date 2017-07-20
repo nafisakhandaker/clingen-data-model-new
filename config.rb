@@ -31,7 +31,6 @@
 ###
 # Helpers
 ###
-
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -43,6 +42,7 @@
 # Methods defined in the helpers block are available in templates
 helpers do
   def model_link(model)
+   # resource = "#{model}/master/index.html"
     resource = "#{model}/master/index.html"
     link = link_to(resource) do
       %(<span class="glyphicon #{data.models[model].icon}"></span>#{model.capitalize})
@@ -51,13 +51,15 @@ helpers do
   end
 end
 
-set :css_dir, 'https://github.com/nafisakhandaker/clingen-new/tree/master/Static_Resources/source/stylesheets'
+set :relative_links, true
 
-set :js_dir, 'https://github.com/nafisakhandaker/clingen-new/tree/master/Static_Resources/source/javascripts'
+set :css_dir, "http//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/stylesheets/"
+    
+set :js_dir, "http//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/javascripts/"
+    
+set :images_dir, "//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/images/"
 
-set :images_dir, 'https://github.com/nafisakhandaker/clingen-new/tree/master/Static_Resources/source/images'
-
-set :layout_dir, 'https://github.com/nafisakhandaker/clingen-new/tree/master/Static_Resources/source/layouts'
+set :layout_dir, '/static-resource/layouts/'
 
 # Build-specific configuration
 configure :build do
