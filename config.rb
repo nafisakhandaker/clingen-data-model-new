@@ -57,10 +57,15 @@ helpers do
         link_to(text, relative_url)
   end
 end
+# Enable Asset Hosts
+activate :asset_host
 
-set :css_dir, "//datamodel.clinicalgenome.org/stylesheets/"
-set :js_dir, "//datamodel.clinicalgenome.org/javascripts/"
-set :images_dir, "//datamodel.clinicalgenome.org/images/"
+set :asset_host do |asset|
+  '//datamodel.clinicalgenome.org'.to_s
+end
+set :css_dir, 'stylesheets'
+set :js_dir, "javascripts"
+set :images_dir, "images"
 set :layout_dir, '/static-resource/layouts/'
 
 # Build-specific configuration
@@ -72,7 +77,7 @@ configure :build do
   # activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+   activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
