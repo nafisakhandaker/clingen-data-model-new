@@ -49,15 +49,20 @@ helpers do
     end
     %(<li class="#{model}">#{link}</li>)
   end
+  def relative_link_to(text, url)
+    # Get current path
+        # Get path of url
+        # Get relative relation between paths
+        # Pass new data to the original link_to helper
+        link_to(text, relative_url)
+  end
 end
 
-set :relative_links, true
-
-set :css_dir, "http//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/stylesheets/"
+set :css_dir, "https//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/stylesheets/"
     
-set :js_dir, "http//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/javascripts/"
+set :js_dir, "https//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/javascripts/"
     
-set :images_dir, "//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/images/"
+set :images_dir, "https//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/images/"
 
 set :layout_dir, '/static-resource/layouts/'
 
