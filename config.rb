@@ -58,11 +58,11 @@ helpers do
   end
 end
 
-set :css_dir, "https//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/stylesheets/"
+set :css_dir, "https://nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/stylesheets/"
     
-set :js_dir, "https//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/javascripts/"
+set :js_dir, "https://nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/javascripts/"
     
-set :images_dir, "https//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/images/"
+set :images_dir, "https://nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/images/"
 
 set :layout_dir, '/static-resource/layouts/'
 
