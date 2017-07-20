@@ -31,6 +31,7 @@
 ###
 # Helpers
 ###
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -42,32 +43,19 @@
 # Methods defined in the helpers block are available in templates
 helpers do
   def model_link(model)
-   # resource = "#{model}/master/index.html"
     resource = "#{model}/master/index.html"
     link = link_to(resource) do
       %(<span class="glyphicon #{data.models[model].icon}"></span>#{model.capitalize})
     end
     %(<li class="#{model}">#{link}</li>)
   end
-  def relative_link_to(text, url)
-    # Get current path
-        # Get path of url
-        # Get relative relation between paths
-        # Pass new data to the original link_to helper
-        link_to(text, relative_url)
-  end
 end
 
-# Enable Asset Hosts
-activate :asset_host
-  
-set :asset_host do |asset|
-'https://nafisakhandaker.github.io/clingen-static-resources/'.to_s
- end
+set :css_dir, 'stylesheets'
 
-  set :css_dir, 'stylesheets'
-  set :js_dir, 'javascripts'
-  set :images_dir, 'images'
+set :js_dir, 'javascripts'
+
+set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
@@ -78,7 +66,7 @@ configure :build do
   # activate :minify_javascript
 
   # Enable cache buster
-   activate :asset_hash
+  # activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets

@@ -11,9 +11,10 @@
     <title>
       <%= current_page.data.title || "ClinGen Data Model" %>
     </title>
-	<%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "brand2" %>
+
+    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "brand2" %>
     <% (current_page.data.append_css || []).each do |cssfile| %>
-    <%= stylesheet_link_tag cssfile, :media => "all"%>
+    <%= stylesheet_link_tag cssfile %>
     <% end %>
 
     <% if build? %>

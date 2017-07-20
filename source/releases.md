@@ -1,3 +1,10 @@
+---
+title: Releases
+description: The process for versioning the conceptual models and associated resources within the ClinGen Data Model.
+layout: home
+ 
+---
+
 {: .lead}
 The Data Model working group is releasing the data model in stages, with some aspects of the model developed before others. Our work is prioritized according to the needs of the ClinGen project as set by the steering committee. Caution is recommended when basing implementations on this data model, as there is not yet a stable (final) release of any aspect of the model.
 

@@ -5,8 +5,8 @@ require 'yaml'
 require 'fileutils'
 
 DOC_REPO_URI =
-  "git@github.com:nafisakhandaker/clingen-data-model.github.io.git"
-DOC_REPO_LOCAL = '../clingen-data-model.github.io'
+  "git@github.com:clingen-data-model/clingen-data-model.github.io.git"
+DOC_REPO_LOCAL = 'clingen-data-model.github.io'
 
 # load the list of versions
 models = YAML.load_file('data/models.yml')

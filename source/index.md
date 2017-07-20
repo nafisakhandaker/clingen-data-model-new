@@ -1,3 +1,9 @@
+---
+title: ClinGen Data Model
+layout: home
+
+---
+
 [ClinGen](http://clinicalgenome.org) is an NIH-funded resource centered on clinically-relevant genomic alleles.  The goal of the ClinGen project is to enhance patient care through:
 
    * Sharing of clinically-relevant genomic data
