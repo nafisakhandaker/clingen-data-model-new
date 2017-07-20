@@ -61,11 +61,11 @@ end
 activate :asset_host
 
 set :asset_host do |asset|
-  '//datamodel.clinicalgenome.org'.to_s
+  '//nafisakhandaker.github.io/clingen-static-resources/'.to_s
 end
 set :css_dir, 'stylesheets'
-set :js_dir, "javascripts"
-set :images_dir, "images"
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
 set :layout_dir, '/static-resource/layouts/'
 
 # Build-specific configuration
