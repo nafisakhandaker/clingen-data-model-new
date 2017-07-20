@@ -58,7 +58,7 @@ helpers do
   end
 end
 
-set :css_dir, "http://datamodel.clinicalgenome.org/stylesheets//stylesheets/"
+set :css_dir, "http://datamodel.clinicalgenome.org/stylesheets/"
 set :js_dir, "http://datamodel.clinicalgenome.org/javascripts/"
 set :images_dir, "http://datamodel.clinicalgenome.org/images/"
 set :layout_dir, '/static-resource/layouts/'
