@@ -9,15 +9,10 @@
     <link rel="icon" href="#######">
 
     <title>
-      ClinGen Data Model
+      FHIR
     </title>
 
-    
-    
-    <link href="https://nafisakhandaker.github.io/clingen-static-resources/stylesheets/bootstrap.css" rel="stylesheet" type = "text/css"/>
-    <link href="https://nafisakhandaker.github.io/clingen-static-resources/stylesheets/bootstrap-theme.css" rel="stylesheet" type = "text/css" />
-    <link href="https://nafisakhandaker.github.io/clingen-static-resources/stylesheets/brand2.css" rel="stylesheet" type = "text/css" />
-    
+    <link href="stylesheets/bootstrap.css" rel="stylesheet" /><link href="stylesheets/bootstrap-theme.css" rel="stylesheet" /><link href="stylesheets/brand2.css" rel="stylesheet" />
 
     <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -76,13 +71,36 @@
       </div>
     </div>
 
-    <p><a href="http://wiki.hl7.org/index.php?title=FHIR">Fast Healthcare Interoperability Resources</a> is an HL7 resource model representing clinical concepts.   FHIR models core concepts, providing a system of resources that cover common situations.  Further, FHIR allows for extensions via profiles to cover more specialized situations.</p>
+    <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 col-md-3 sidebar">
+      <ul class="nav nav-sidebar">
+        <li class='nav-sidebar-title'>
+<a href="https://clinicalgenome.org">            <img width="100%" height="100%" alt="ClinGen Documentation" class="img-responsive" src="images/clingen-doc-logo.png" />
+</a>        </li>
+        <li><a href="/">Overview</a></li>
+        <li><a href="/fhir.html">FHIR</a></li>
+        <li><a href="/releases.html">Releases</a></li>
+        <li><a href="https://github.com/tnavatar/clingen-data-model">GitHub Project</a></li>
+          <li class="allele"><a href="allele/master/index.html"><span class="glyphicon glyphicon-leaf"></span>Allele</a></li>
+          <li class="interpretation"><a href="interpretation/master/index.html"><span class="glyphicon glyphicon-star"></span>Interpretation</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
+      <article>
+        <h1>FHIR</h1>
+        <p><a href="http://wiki.hl7.org/index.php?title=FHIR">Fast Healthcare Interoperability Resources</a> is an HL7 resource model representing clinical concepts.   FHIR models core concepts, providing a system of resources that cover common situations.  Further, FHIR allows for extensions via profiles to cover more specialized situations.</p>
 
 <p>FHIR represents an example of a well-documented resource model in a clinical domain, and a model in which there is significant community interest and involvement.   As such, the Data Model Working Group has used FHIR as a model in how to construct resources and documentation.  Further, several resources in the Allele model, such as Identifier, are based on analogous FHIR resources.</p>
 
 <p>Integration of genomic data with medical records is a current topic of interest in both clinical genomic and medical informatics communities.  The ClinGen allele model is a suitable basis for constructing statments about measurement and interpretation of genomic alleles.   While integration between the Allele model and FHIR would be a benefit from this point of view, the Data Model Working Group has not constructed the Allele model as a FHIR extension.  Future versions of the Allele model may move in this direction.</p>
 
 <p>If future versions are to acheive FHIR integration, several problems must be addressed.   First, FHIR profiles are not allowed to create new resource types, but only to modify the core resources.  Given the complexity of the Allele (and subsequent) data models in the ClinGen ecosystem, the Working Group found this to be a significant barrier.  Second, one of the core systems in ClinGen, the ClinGenDB, is being constructed based on the use of linked data, including the JSON-LD specification.  JSON-LD is a format that serializes RDF in a JSON message, bringing the promise of semantic web technologies to the ClinGen data.  However, the relationship between RDF and the FHIR-JSON serialization is still a working topic in the FHIR and JSON-LD commmunities, so the Working Group decided to let this topic mature further.</p>
+
+      </article>
+    </div>
+  </div>
+</div>
 
 
     <!-- Bootstrap core JavaScript
